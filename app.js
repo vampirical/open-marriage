@@ -1,3 +1,5 @@
+require('dotenv').load();
+
 var combo   = require('combohandler'),
     express = require('express'),
     exphbs  = require('express3-handlebars'),
@@ -12,7 +14,7 @@ var combo   = require('combohandler'),
 
 // -- Configure ----------------------------------------------------------------
 
-app.set('name', 'Leslie-Eric Wedding');
+app.set('name', 'Elizabeth-Jeff Wedding');
 app.set('env', config.env);
 app.set('port', config.port);
 app.set('views', config.dirs.views);
@@ -33,8 +35,8 @@ app.engine('hbs', exphbs({
 app.expose(config.yui.config, 'window.YUI_config');
 
 app.locals({
-    title   : 'Leslie & Eric',
-    appTitle: 'L&E Wedding',
+    title   : 'Elizabeth & Jeff',
+    appTitle: 'E&J Wedding',
 
     version    : config.version,
     yui_version: config.yui.version,
@@ -42,8 +44,7 @@ app.locals({
     nav: [
         {id: 'wedding',   url: '/wedding/',   label: 'Wedding'},
         {id: 'logistics', url: '/logistics/', label: 'Logistics'},
-        {id: 'registry',  url: '/registry/',  label: 'Registry'},
-        {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
+        {id: 'registry',  url: '/registry/',  label: 'Registry'}
     ],
 
     subnav: {

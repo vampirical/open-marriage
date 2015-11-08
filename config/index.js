@@ -30,7 +30,7 @@ config = {
     },
 
     email: {
-        from: 'Leslie & Eric <rsvp@leslie-eric.us>'
+        from: 'Elizabeth & Jeff <rsvp@marion-johnson.com>'
     },
 
     dirs: {
