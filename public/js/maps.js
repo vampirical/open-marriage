@@ -3,6 +3,7 @@ YUI.add('le-maps', function (Y) {
     var isRetina = Y.config.win.devicePixelRatio >= 2;
 
     Y.all('[data-map]').each(function (mapNode) {
+console.log(mapbox);
         mapbox.load(mapNode.getData('map'), function (data) {
             var map = mapbox.map(mapNode.getDOMNode(), [
                 data.layer,

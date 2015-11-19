@@ -1,0 +1,121 @@
+{{setYUIModule "le-home"}}
+{{setDescription "Elizabeth Johnson & Jeff Marion are getting married on May 28th, 2016 in Menlo Park, CA."}}
+{{addCSS "/css/home.css"}}
+
+<h1 class="ann">
+    <span class="ann-primary">Elizabeth Johnson</span>
+    <span class="ann-secondary ann-sep">&amp;</span>
+    <span class="ann-primary">Jeff Marion</span>
+</h1>
+
+<ol class="timeline l-grid">
+  {{#event "Getting Married"
+        time   = "May 28, 2016"}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+        Elizabeth and Jeff are getting married this Spring in <strong>Menlo Park, California</strong>.
+    </p>
+
+    <p class="button-wedding">
+        <a class="button" data-icon="i" href="/wedding/">See Wedding Details</a>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Got Engaged"
+        time = "March 25, 2015"
+        photo  = "/photos/engagement.jpg"
+        alt    = "Photo of Elizabeth and Jeff at Foothills Park after the proposal."}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+    </p>
+    <p>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+    <li class="timeline-events">
+        <ol class="l-grid">
+           {{#event "Hiking in Foothills Park"
+                who  = "elizabeth"
+                time = "March 25, 2015"}}
+
+            {{> event/header}}
+
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+
+            {{> event/time}}
+          {{/event}}
+
+          {{#event "Got the Ring"
+                who  = "jeff"
+                time = "March 21, 2012"}}
+
+            {{> event/header}}
+
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+
+            {{> event/time}}
+          {{/event}}
+        </ol>
+    </li>
+
+  {{#event "Got their First Place Together"
+        time  = "October, 2013"
+        photo = "/photos/apartment.jpg"
+        alt   = "Photo of Elizabeth's and Jeff's apartment in San Jose."}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+        After dating for a couple of years, Elizabeth and Jeff were very much in love and decided to move in together. They found a beautiful apartment in a terrible location in San Jose and never saw any of their friends again...
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Went on First Date"
+        time = "December, 2011"}}
+
+    {{> event/header}}
+
+    <p>
+    </p>
+    <p>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Met for the First Time"
+        time = "December 2011"}}
+
+    {{> event/header}}
+
+    <p>
+    </p>
+    <p>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+</ol>

@@ -28,6 +28,7 @@
     "deep-freeze": "latest",
     "dotenv": "^1.2.0",
     "express": "3.2.x",
+    "express-expose": "^0.3.4",
     "express-slash": "latest",
     "express-state": "latest",
     "express3-handlebars": "latest",

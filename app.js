@@ -2,6 +2,7 @@ require('dotenv').load();
 
 var combo   = require('combohandler'),
     express = require('express'),
+    expose  = require('express-expose'),
     exphbs  = require('express3-handlebars'),
     state   = require('express-state'),
 
@@ -10,7 +11,7 @@ var combo   = require('combohandler'),
     middleware = require('./middleware'),
     routes     = require('./routes'),
 
-    app = express();
+    app = expose(express());
 
 // -- Configure ----------------------------------------------------------------
 
@@ -42,9 +43,11 @@ app.locals({
     yui_version: config.yui.version,
 
     nav: [
+	/*
         {id: 'wedding',   url: '/wedding/',   label: 'Wedding'},
         {id: 'logistics', url: '/logistics/', label: 'Logistics'},
         {id: 'registry',  url: '/registry/',  label: 'Registry'}
+	*/
     ],
 
     subnav: {
@@ -73,7 +76,7 @@ if (config.isDevelopment) {
 }
 
 app.use(express.compress());
-app.use(express.favicon(config.dirs.pub + '/favicon.ico'));
+//app.use(express.favicon(config.dirs.pub + '/favicon.ico'));
 app.use(express.cookieParser());
 app.use(express.cookieSession(config.session));
 app.use(express.json());

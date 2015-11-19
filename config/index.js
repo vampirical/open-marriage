@@ -41,7 +41,7 @@ config = {
         emails  : path.resolve('views/emails/')
     },
 
-    date: new Date('Sat Oct 5 2013 4:30:00 GMT-0400 (EDT)'),
+    date: new Date('Sat May 28 2016 4:30:00 GMT-0700 (PST)'),
 
     version: require('../package').version,
 

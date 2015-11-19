@@ -12,6 +12,10 @@ YUI.add('le-wedding', function (Y) {
         }
     }
 
+    if (!cal) {
+	return;
+    }
+
     graphic = new Y.Graphic({
         id    : 'cal-day-circle',
         render: cal.one('.cal-day-primary')
