@@ -46,25 +46,6 @@ exports.config  = {
                     requires: ['node-base', 'mapbox']
                 },
 
-                'le-rsvp': {
-                    path    : 'js/rsvp.js',
-                    requires: [
-                        'le-main',
-                        'app-base',
-                        'app-content',
-                        'app-transitions',
-                        'escape',
-                        'event-focus',
-                        'io-queue',
-                        'model',
-                        'model-list',
-                        'model-sync-rest',
-                        'selector-css3',
-                        'view',
-                        'promise'
-                    ]
-                },
-
                 'le-wedding': {
                     path: 'js/wedding.js',
                     requires: ['le-main', 'le-maps', 'event-resize', 'graphics']

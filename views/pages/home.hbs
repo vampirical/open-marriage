@@ -8,6 +8,149 @@
     <span class="ann-primary">Jeff Marion</span>
 </h1>
 
-<p style="text-align: center">
-	Details coming soon.
-</p>
+<ol class="timeline l-grid">
+  {{#event "Getting Married"
+        time   = "May 28, 2016"
+	photo  = "/img/allied-arts.jpg"
+	alt    = "Allied Arts Guild - Menlo Park, CA"}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+        Elizabeth and Jeff are getting married this Spring at <strong>The Allied Arts Guild in Menlo Park, California</strong>.
+    </p>
+
+    <p class="button-wedding">
+        <a class="button" data-icon="i" href="/wedding/">See Wedding Details</a>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Got Engaged"
+        time = "March 25, 2015"
+        photo  = "/photos/engagement.jpg"
+        alt    = "Photo of Elizabeth and Jeff at Foothills Park after the proposal."}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+	After a hike up to their favorite bench on the hillside in Foothills Park, Jeff gets down on one knee and proposes.
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+    <li class="timeline-events">
+        <ol class="l-grid">
+          {{#event "The Ring Arrives"
+                who  = "jeff"
+                time = "March 21, 2015"}}
+
+            {{> event/header}}
+
+            <p>
+		The ring arrives but Elizabeth is throwing a bridal shower for her friend Robin and her cousin David has just announced his engagement, just a little more waiting is necessary.
+            </p>
+            <p>
+		<img src="/img/ring.jpg" width="330px" />
+            </p>
+
+            {{> event/time}}
+          {{/event}}
+          
+          {{#event "She Suspects"
+                who   = "elizabeth"
+                time  = "February, 2015"
+		style = "margin-top: 40em"}}
+
+            {{> event/header}}
+
+            <p>
+		Definitely not because her mother and best friend have leaked anything, Elizabeth suspects something might be up.
+            </p>
+
+            {{> event/time}}
+          {{/event}}
+
+          {{#event "Asking for Permission"
+                who  = "jeff"
+                time = "October, 2014"}}
+
+            {{> event/header}}
+
+            <p>
+		At a family party at Elizabeth's aunt Catherine's house, Jeff asks Larry for permission to propose to Elizabeth...and then move to Texas. The Texas plan falls through after a house hunting trip but the proposal plan does not.
+            </p>
+
+            {{> event/time}}
+          {{/event}}
+        </ol>
+    </li>
+  
+  {{#event "First Backpacking Trip"
+        time  = "September, 2014"
+        photo = "/img/first-backpacking-trip.jpg"}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Pippin Joins the Family"
+        time  = "May, 2014"
+        photo = "/img/pippin.jpg"}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Got their First Place Together"
+        time  = "October, 2012"
+        photo = "/photos/apartment.jpg"
+        alt   = "Photo of Elizabeth's and Jeff's apartment in San Jose."}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+        After dating for about a year, Elizabeth and Jeff were very much in love and decided to move in together. They found a beautiful apartment in a terrible location in San Jose and never saw any of their friends again...
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Went on First Date"
+        time = "December 26th, 2011"}}
+
+    {{> event/header}}
+
+    <p>
+	They had bad italian food and watched a schlocky movie, it probably should have been a bad date but instead it was great.
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+
+  {{#event "Met for the First Time"
+        time = "December 22nd, 2011"}}
+
+    {{> event/header}}
+
+    <p>
+	<img src="/img/do-or-do-not-shirt.jpg" style="float: right" />
+	Elizabeth was taking her mom and brother out for lunch on her mom's birthday. Thankfully her mom wanted tortilla soup from the mexican restaurant a few doors down from Jeff's office. Elizabeth noticed Jeff's oh so nerdy t-shirt and started up a conversation. Her mom never got her soup, there's a reason everyone calls it the "bad mexican restaurant", but Jeff got Elizabeth's phone number.
+        <div style="clear: both"></div>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+</ol>

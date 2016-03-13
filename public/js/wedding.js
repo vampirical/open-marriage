@@ -1,7 +1,10 @@
 YUI.add('le-wedding', function (Y) {
-
     var cal = Y.one('.cal'),
         graphic;
+
+    if (!cal) {
+	return;
+    }
 
     function centerCal() {
         var scrollWidth = cal.get('scrollWidth'),
@@ -10,10 +13,6 @@ YUI.add('le-wedding', function (Y) {
         if (scrollWidth > clientWidth) {
             cal.set('scrollLeft', (scrollWidth - clientWidth) / 2);
         }
-    }
-
-    if (!cal) {
-	return;
     }
 
     graphic = new Y.Graphic({
@@ -47,7 +46,6 @@ YUI.add('le-wedding', function (Y) {
 
     centerCal();
     Y.one('win').on(['orientationchange', 'windowresize'], centerCal);
-
 }, '1.8.0', {
     requires: ['le-main', 'le-maps', 'event-resize', 'graphics']
 });
