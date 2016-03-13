@@ -123,6 +123,9 @@ body {
     margin: 0 -0.5em;
     height: 20em;
 }
+.event p {
+    line-height: 1.8em;
+}
 
 .button-wedding {
     margin: 2em;

@@ -104,6 +104,7 @@ if (config.isDevelopment) {
 // -- Routes -------------------------------------------------------------------
 
 app.get('/', routes.render('home'));
+app.get('/home-progress', routes.render('home-progress'));
 
 app.get('/wedding/', routes.render('wedding'));
 
